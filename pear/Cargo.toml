@@ -1,0 +1,12 @@
+[package]
+name = "pear"
+version = "0.1.0"
+authors = ["Phoenix Kahlo <kahlo.phoenix@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+backtrace = "0.3"
+map_vec = "0.3"
+textwrap = "0.12"
+unicode-width = "0.1"
+ansi-parser = "0.6"

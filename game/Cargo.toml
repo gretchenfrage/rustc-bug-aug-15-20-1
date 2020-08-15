@@ -1,0 +1,37 @@
+[package]
+name = "game"
+version = "0.1.0"
+authors = ["Phoenix Kahlo <kahlo.phoenix@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+# logging
+pear = { path = "../pear" }
+tracing = "0.1"
+tracing-subscriber = "0.2"
+
+# graphics
+wgpu = { git = "https://github.com/gfx-rs/wgpu-rs.git", rev = "3069da10043c46a2b184fb57ad3760a5799d3f9b" }
+winit = "0.22.2"
+bytemuck = "1.2"
+memoffset = "0.5"
+image = "0.23"
+
+# math
+rand = "0.7"
+mint = "0.5"
+vek = { version = "0.11", features = [ "mint" ] }
+num-traits = "0.2"
+
+# other
+iter_vals = "0.1"
+arraymap = "0.1"
+array_iterator = "0.2"
+futures = "0.3"
+smallvec = "1.4"
+
+[features]
+default = []
+
+# enable SIMD acceleration which requires nightly
+simd-nightly = []

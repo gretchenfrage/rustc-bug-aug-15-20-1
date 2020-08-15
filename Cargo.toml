@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "game",
+    "pear",
+    "floatilla",
+]
+
+[profile.dev]
+opt-level = 2
